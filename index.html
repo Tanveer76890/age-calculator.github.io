@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Age Calculator</title>
+     <link rel="stylesheet" href="style.css">
+
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Josefin+Sans&family=MuseoModerno&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+</head>
+<body>
+     <div class="container">
+          <div class="top">
+               <div class="enter">
+                    <h3>Age Calculator</h3>
+               </div>
+          </div>
+
+          <div class="mid">
+               <h4>Enter Your Date of Birth</h4>
+               <div class="date item">
+                    <p>Date <span id="d-val">01</span>  </p>
+                    <input type="range" id="date" min="1" max="31" value="01">
+               </div>
+
+               <div class="month item">
+                    <p>Month <span id="m-val">01</span>  </p>
+                    <input type="range" id="month" min="1" max="12" value="01">
+               </div>
+               <div class="year item">
+                    <p>Year <span id="y-val">2000</span>  </p>
+                    <input type="range" id="year" min="1950" max="2023" value="2000">
+               </div>
+               <input type="button" value="Calculate" class="btn btn1" onclick="age()">
+               <input type="button" value="Clear" class="btn btn2">
+          </div>
+
+          <div id="age">Your age is something</div>
+          <div class="bottom"></div>
+
+     </div>
+
+     <script src="logic.js"></script>
+</body>
+</html>
